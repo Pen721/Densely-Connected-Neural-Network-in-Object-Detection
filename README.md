@@ -5,9 +5,7 @@ Train a machine learning model effective in object detection which could be used
 ## Motivation
 ### Visual Impaired Satistics
 As of 2018, The WHO (World Health Organization) estimated that there are approximately 1.3 billion people around the globe who live with some form of vision impairment. Of those, approximately 285 million are completely blind, and 90% of them live in a developing country. Therefore many visually impaired citizens around the globe do not have access, nor the financial support to afford assistive technology.
-
-![alt text](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj26-O_ypniAhVSTt8KHbREBHkQjRx6BAgBEAU&url=https%3A%2F%2Fwww.augsburg.edu%2Fclass%2Fgroves%2Fassistive-technology%2Feveryone%2F&psig=AOvVaw3HiMs2B7vb3rdro4uqUbbX&ust=1557873854351360)
-
+![alt text](https://www.augsburg.edu/class/wp-content/uploads/sites/78/2014/05/AT-Mind-Map-for-Website.jpg)
 ### Assistive Technology
 Assistive technology Assistive technology is an umbrella term covering the systems and services related to the delivery of assistive products and services. Some of the most common blind assistive technology are blind assisting headphones such as Jabra Assist, screen readers, and braille printers. However, currently, most assistive technology focuses on enhancing the users' other senses such as touch and hearing to replace the vision.
 
