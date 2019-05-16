@@ -136,13 +136,13 @@ class ConvNet(nn.Module):
         self.fc2 = nn.Linear(ll[0], 100)
     def forward(self, x):
         out = self.trlayer1(x)
-        for i in range(8):
+        for i in range(4):
             aut = self.layer1[i](out)
-            out = torch.cat((out, aut), 1)
+            out=out.add(aut)
         out = self.trlayer2(out)
-        for i in range(8):
+        for i in range(4):
             aut = self.layer2[i](out)
-            out = torch.cat((out, aut), 1)
+            out=out.add(aut)
         out = self.trlayer3(out)
 #        out = self.trlayer4(out)
         out = out.reshape(out.size(0), -1)
@@ -240,11 +240,15 @@ def test():
             print("Acc:" , 100. * correct / total)
     print('Accuracy: %d %%' % (
             100 * correct / total))
-for epoch in range(start_epoch, start_epoch+3):
+for epoch in range(start_epoch, start_epoch+10):
     print("learning rate:", learning_rate,"channel size: ", size)
     train(epoch)
     validate(epoch)
     learning_rate = np.random.uniform(0.1, 0.00004)
     size = np.random.randint(16, 64)
     #batch = np.random.randint(100, 200)
-test()
+test() 
+#test accuracy after
+#10 min = 5%
+#20 min = 8%
+#overenight final acc: 34%
