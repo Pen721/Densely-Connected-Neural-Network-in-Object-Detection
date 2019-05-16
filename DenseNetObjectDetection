@@ -240,11 +240,16 @@ def test():
             print("Acc:" , 100. * correct / total)
     print('Accuracy: %d %%' % (
             100 * correct / total))
-for epoch in range(start_epoch, start_epoch+2):
+for epoch in range(start_epoch, start_epoch+10):
     print("learning rate:", learning_rate,"channel size: ", size)
     train(epoch)
     validate(epoch)
     learning_rate = np.random.uniform(0.1, 0.00004)
     size = np.random.randint(16, 64)
     #batch = np.random.randint(100, 200)
-test() #final acc: 29% with CIFAR 100, 70% CIFAR 10 (old model)
+test() 
+#accuracy after
+#10 min = 5%
+#20 min = 10%
+#50 min = 15%
+#final acc overnight: 37% with CIFAR 100, 80% CIFAR 10 (old model)
